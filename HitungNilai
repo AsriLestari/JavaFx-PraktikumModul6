@@ -1,0 +1,25 @@
+ 
+import java.util.Scanner;
+
+public class HitungNilai {
+    public static void main (String [] hady){
+        String Nama , Nim ;
+        final double N_tugas , N_uts , N_kuis , N_uas , N_akhir;
+        Scanner input = new Scanner (System.in);
+  System.out.println("===== Menghitung Nilai Mahasiswa=====\n");
+        System.out.print("Masukan Nama : ");
+        Nama = input.nextLine();
+        System.out.print("Masukan NIM  : ");
+        Nim = input.nextLine();
+        System.out.print("Nilai Tugas  : ");
+        N_tugas = input.nextInt();
+        System.out.print("Nilai kuis   : ");
+        N_kuis = input.nextInt();
+        System.out.print("Nilai UTS    : ");
+        N_uts = input.nextInt();
+        System.out.print("Nilai UAS    : ");
+        N_uas = input.nextInt();
+        N_akhir = (0.15 * N_tugas + 0.20 * N_kuis + 0.30 * N_uts + 0.35 * N_uas);
+        System.out.println(Nama+" dengan NIM "+Nim+" memiliki nilai akhir "+N_akhir);
+    }
+}
